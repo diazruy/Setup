@@ -10,7 +10,8 @@ sudo add-apt-repository ppa:jerome-etienne/neoip && \
   libc6-dev ncurses-dev ncurses-term nodejs && \
  bash < <(curl -s https://rvm.beginrescueend.com/install/rvm) && \
   echo "Finish RVM installation (add if and source rvm in shells in .bashrc)" && read -p "Press any key to continue" && \
-  rvm install package zlib && \
+  source ~/.bashrc && \
+  rvm package install zlib && \
   rvm install 1.9.2 --with-zlib-dir=$rvm_path/usr --with-readline-dir="$HOME/.rvm/usr" && \
   ssh-keygen -t rsa -C "diazruy@gmail.com" && \
   cat ~/.ssh/id_rsa.pub && echo "Intall SSH Key in github" && read -p "Press any key to continue" && \

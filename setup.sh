@@ -24,7 +24,8 @@ sudo add-apt-repository ppa:jerome-etienne/neoip && \
   mkdir ~/projects && cd ~/projects && rvm use 1.9.2 &&
   gem install heroku bundler --no-ri --no-rdoc && heroku keys:add && \
   git clone -o heroku git@heroku.com:splitsee.git && \
-  rvm gemset create splitsee && cd splitsee && bundle && rake db:migrate && \
+  rvm gemset create splitsee && cd splitsee && gem install bundler && \
+  bundle && rake db:migrate && \
   rake db:test:prepare
   
 

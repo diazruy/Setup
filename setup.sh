@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 # Install packages
 sudo add-apt-repository ppa:jerome-etienne/neoip && \

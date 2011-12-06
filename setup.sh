@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:jerome-etienne/neoip && \
   bison openssl libreadline6 libreadline6-dev  \
   zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 \
   libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
-  libc6-dev ncurses-dev ncurses-term nodejs && \
+  libc6-dev ncurses-dev ncurses-term nodejs libqt4-dev qt4-qmake && \
   # Chrome
   sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) &&\
   # RVM
@@ -20,7 +20,7 @@ sudo add-apt-repository ppa:jerome-etienne/neoip && \
   vim ~/.bashrc && \
   source ~/.bashrc && \
   rvm package install zlib && \
-  rvm install 1.9.2 --with-zlib-dir=$rvm_path/usr --with-readline-dir="$HOME/.rvm/usr" && \
+  rvm install 1.9.3 && \
   # SSH
   ssh-keygen -t rsa -C "diazruy@gmail.com" && \
   cat ~/.ssh/id_rsa.pub && echo "Intall SSH Key in github" && \

@@ -1,25 +1,23 @@
 #!/bin/bash
 
 # Install packages
-sudo add-apt-repository ppa:jerome-etienne/neoip && \
-  sudo apt-get update && \
-  sudo apt-get install build-essential gnome-do \
+sudo sudo apt-get install build-essential gnome-do \
   git-core git-cola ruby-dev rubygems rake curl vim-gnome \
   exuberant-ctags screen libopenssl-ruby \
   bison openssl libreadline6 libreadline6-dev  \
   zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 \
   libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
+  postgresql postgresql-client \
   libc6-dev ncurses-dev ncurses-term nodejs libqt4-dev qt4-qmake && \
   # Chrome
-  sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) &&\
+  sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) && \
   # RVM
-  bash < <(curl -s https://rvm.beginrescueend.com/install/rvm) && \
+  bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer ) && \
   echo "Finish RVM installation (add if and source rvm in shells in .bashrc)" && \
   read -p "Press any key to continue" && \
   echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc && \
   vim ~/.bashrc && \
   source ~/.bashrc && \
-  rvm package install zlib && \
   rvm install 1.9.3 && \
   # SSH
   ssh-keygen -t rsa -C "diazruy@gmail.com" && \

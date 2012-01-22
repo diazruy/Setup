@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages
-sudo sudo apt-get install build-essential gnome-do \
+sudo apt-get install build-essential gnome-do \
   git-core git-cola ruby-dev rubygems rake curl vim-gnome \
   exuberant-ctags screen libopenssl-ruby \
   bison openssl libreadline6 libreadline6-dev  \

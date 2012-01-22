@@ -32,10 +32,10 @@ sudo apt-get install build-essential gnome-do \
   cd bundle/command-t && rvm use system && rake make && \
   read -p "Add 'export TERM=xterm-256color' to .bashrc" && \
   # Splitsee
-  mkdir ~/projects && cd ~/projects && rvm use 1.9.2 &&
+  mkdir ~/projects && cd ~/projects && rvm use 1.9.3 &&
   gem install heroku bundler --no-ri --no-rdoc && heroku keys:add && \
-  git clone -o heroku git@heroku.com:splitsee.git && \
-  rvm gemset create splitsee && cd splitsee && gem install bundler && \
+  git clone -o heroku git@heroku.com:splitsee3.git && \
+  rvm gemset create splitsee3 && cd splitsee3 && gem install bundler && \
   bundle && rake db:migrate && \
   rake db:test:prepare
   

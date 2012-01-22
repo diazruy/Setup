@@ -7,7 +7,7 @@ sudo apt-get install build-essential gnome-do \
   bison openssl libreadline6 libreadline6-dev  \
   zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 \
   libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
-  postgresql postgresql-client \
+  postgresql postgresql-client libpq-dev \
   libc6-dev ncurses-dev ncurses-term nodejs libqt4-dev qt4-qmake && \
   # Chrome
   sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) && \

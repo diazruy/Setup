@@ -8,7 +8,10 @@ sudo apt-get install build-essential gnome-do \
   zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 \
   libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
   postgresql postgresql-client libpq-dev \
-  libc6-dev ncurses-dev ncurses-term nodejs libqt4-dev qt4-qmake && \
+  libc6-dev ncurses-dev ncurses-term nodejs libqt4-dev qt4-qmake \
+  autojump openjdk-7-jdk ack-grep gparted nginx virtualbox \
+  libgtk2.0-0 libgdk-pixbuf2.0-0 ia32-libs-gtk ack-grep \
+  icedtea-6-plugin icedtea-7-plugin ia32-libs-gtk compizconfig-settings-manager && \
   # Chrome
   sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) && \
   # RVM

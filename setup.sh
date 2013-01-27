@@ -1,17 +1,62 @@
 #!/bin/bash
 
 # Install packages
-sudo apt-get install build-essential gnome-do \
-  git-core git-cola ruby-dev rubygems rake curl vim-gnome \
-  exuberant-ctags screen libopenssl-ruby \
-  bison openssl libreadline6 libreadline6-dev  \
-  zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 \
-  libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
-  postgresql postgresql-client libpq-dev \
-  libc6-dev ncurses-dev ncurses-term nodejs libqt4-dev qt4-qmake \
-  autojump openjdk-7-jdk ack-grep gparted nginx virtualbox \
-  libgtk2.0-0 libgdk-pixbuf2.0-0 ia32-libs-gtk ack-grep \
-  icedtea-6-plugin icedtea-7-plugin ia32-libs-gtk compizconfig-settings-manager && \
+sudo apt-get install 
+  ack-grep \
+  ack-grep \
+  autoconf \
+  autojump \
+  automake \
+  bison \
+  build-essential \
+  compizconfig-settings-manager\
+  curl \
+  exuberant-ctags \
+  git-cola \
+  git-core \
+  gparted \
+  ia32-libs-gtk \
+  ia32-libs-gtk \
+  icedtea-6-plugin \
+  icedtea-7-plugin \
+  libc6-dev \
+  libcurl3-dev\
+  libgdk-pixbuf2.0-0 \
+  libgtk2.0-0 \
+  libgdbm-dev \
+  libffi-dev \
+  libopenssl-ruby \
+  libpq-dev \
+  libqt4-dev \
+  libreadline6 \
+  libreadline6-dev\
+  libsqlite3-dev \
+  libsqlite4-0 \
+  libssl-dev \
+  libtool \
+  libxml2-dev \
+  libxslt-dev \
+  libyaml-dev \
+  ncurses-dev \
+  ncurses-term \
+  nginx \
+  nodejs \
+  openjdk-7-jdk \
+  openssl \
+  postgresql \
+  postgresql-client \
+  qt4-qmake \
+  rake \
+  ruby-dev \
+  rubygems \
+  screen \
+  sqlite3 \
+  vim-gnome\
+  virtualbox \
+  zlib1g \
+  zlib1g-dev \
+  && \
+
   # Chrome
   sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) && \
   # RVM

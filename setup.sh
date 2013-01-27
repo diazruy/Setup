@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install packages
-sudo apt-get install 
+sudo apt-get install \
+  account-plugin-irc \
   ack-grep \
   ack-grep \
   autoconf \
@@ -32,6 +33,7 @@ sudo apt-get install
   libreadline6-dev\
   libsqlite3-dev \
   libsqlite4-0 \
+  libssl0.9.8 \
   libssl-dev \
   libtool \
   libxml2-dev \

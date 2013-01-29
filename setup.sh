@@ -4,7 +4,6 @@
 sudo apt-get install \
   account-plugin-irc \
   ack-grep \
-  ack-grep \
   autoconf \
   autojump \
   automake \

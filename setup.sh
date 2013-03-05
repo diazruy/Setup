@@ -54,6 +54,7 @@ sudo apt-get install \
   sqlite3 \
   vim-gnome\
   virtualbox \
+  xclip \
   zlib1g \
   zlib1g-dev \
   && \

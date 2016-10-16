@@ -2,23 +2,18 @@
 
 # Install packages
 sudo apt-get install \
-  account-plugin-irc \
   ack-grep \
   autoconf \
   autojump \
   automake \
   bison \
   build-essential \
-  compizconfig-settings-manager\
   curl \
   exuberant-ctags \
   git-cola \
   git-core \
   gparted \
-  ia32-libs-gtk \
-  ia32-libs-gtk \
-  icedtea-6-plugin \
-  icedtea-7-plugin \
+  icedtea-8-plugin \
   libc6-dev \
   libcurl3-dev\
   libgdk-pixbuf2.0-0 \
@@ -42,7 +37,7 @@ sudo apt-get install \
   ncurses-term \
   nginx \
   nodejs \
-  openjdk-7-jdk \
+  openjdk-9-jdk \
   openssl \
   postgresql \
   postgresql-client \
@@ -50,13 +45,13 @@ sudo apt-get install \
   rake \
   ruby-dev \
   rubygems \
-  screen \
   sqlite3 \
+  tmux \
   vim-gnome\
-  virtualbox \
   xclip \
   zlib1g \
   zlib1g-dev \
+  zsh \
   && \
 
   # Chrome

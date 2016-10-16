@@ -23,6 +23,7 @@ sudo apt-get install \
   libopenssl-ruby \
   libpq-dev \
   libqt4-dev \
+  libqtwebkit-dev \
   libreadline6 \
   libreadline6-dev\
   libsqlite3-dev \
@@ -33,16 +34,20 @@ sudo apt-get install \
   libxml2-dev \
   libxslt-dev \
   libyaml-dev \
+  memcached \
   ncurses-dev \
   ncurses-term \
   nginx \
   nodejs \
   openjdk-9-jdk \
   openssl \
+  pgadmin3 \
+  postgis \
   postgresql \
   postgresql-client \
   qt4-qmake \
   rake \
+  redis-server \
   ruby-dev \
   rubygems \
   sqlite3 \
@@ -78,10 +83,6 @@ sudo apt-get install \
   read -p "Add 'export TERM=xterm-256color' to .bashrc" && \
   # Splitsee
   mkdir ~/projects && cd ~/projects && rvm use 1.9.3 &&
-  gem install heroku bundler --no-ri --no-rdoc && heroku keys:add && \
-  git clone -o heroku git@heroku.com:splitsee3.git && \
-  rvm gemset create splitsee3 && cd splitsee3 && gem install bundler && \
-  bundle && rake db:migrate && \
-  rake db:test:prepare
+  gem install heroku bundler foreman --no-ri --no-rdoc && heroku keys:add && \
   
 

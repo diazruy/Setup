@@ -38,7 +38,7 @@ sudo apt-get install \
   ncurses-term \
   nginx \
   nodejs \
-  openjdk-9-jdk \
+  openjdk-8-jdk \
   openssl \
   pgadmin3 \
   postgis \

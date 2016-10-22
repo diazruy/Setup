@@ -64,13 +64,9 @@ sudo apt-get install \
   chsh -s /bin/zsh \
   
   # RVM
-  bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer ) && \
-  echo "Finish RVM installation (add if and source rvm in shells in .bashrc)" && \
-  read -p "Press any key to continue" && \
-  echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc && \
-  vim ~/.bashrc && \
-  source ~/.bashrc && \
-  rvm install 1.9.3 && \
+  curl -sSL https://get.rvm.io | bash -s stable --with-default-gems="rails haml" \
+  rvm install 2.3.0 && \
+  
   # SSH
   ssh-keygen -t rsa -C "diazruy@gmail.com" && \
   cat ~/.ssh/id_rsa.pub && echo "Intall SSH Key in github" && \
@@ -83,8 +79,5 @@ sudo apt-get install \
   git submodule init && git submodule update && \
   cd bundle/command-t && rvm use system && rake make && \
   read -p "Add 'export TERM=xterm-256color' to .bashrc" && \
-  # Splitsee
-  mkdir ~/projects && cd ~/projects && rvm use 1.9.3 &&
-  gem install heroku bundler foreman --no-ri --no-rdoc && heroku keys:add && \
   
 

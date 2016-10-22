@@ -76,6 +76,7 @@ sudo apt-get install \
   # RVM
   curl -sSL https://get.rvm.io | bash -s stable --with-default-gems="rails haml" \
   rvm install 2.3.0 && \
+  # Change Terminal Profile settings under Command and select "Run command as login shell"
 
   sudo -u postgres create user -s rew -P &&
   

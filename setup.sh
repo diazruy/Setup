@@ -12,23 +12,22 @@ sudo apt-get install \
   exuberant-ctags \
   git-cola \
   git-core \
+  gnome-tweak-tool \
   gparted \
   icedtea-8-plugin \
+  indicator-multiload \
   libc6-dev \
   libcurl3-dev\
   libgdk-pixbuf2.0-0 \
   libgtk2.0-0 \
   libgdbm-dev \
   libffi-dev \
-  libopenssl-ruby \
   libpq-dev \
   libqt4-dev \
   libqtwebkit-dev \
   libreadline6 \
   libreadline6-dev\
   libsqlite3-dev \
-  libsqlite4-0 \
-  libssl0.9.8 \
   libssl-dev \
   libtool \
   libxml2-dev \
@@ -59,8 +58,11 @@ sudo apt-get install \
   zsh \
   && \
 
-  # Chrome
-  sudo dpkg -i < <(curl https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb) && \
+  # Run "indicator" from unity
+  # Run "tweak tool" from unity and change Caps to Control: Typing / Caps Lock Behaviour / Make Caps lock extra Ctrl
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
+  chsh -s /bin/zsh \
+  
   # RVM
   bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer ) && \
   echo "Finish RVM installation (add if and source rvm in shells in .bashrc)" && \

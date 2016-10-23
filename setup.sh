@@ -49,6 +49,7 @@ sudo apt-get install \
   redis-server \
   ruby-dev \
   rubygems \
+  shutter \
   sqlite3 \
   tmux \
   vim-gnome\

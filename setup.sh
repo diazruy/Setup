@@ -59,9 +59,13 @@ sudo apt-get install \
   zsh \
   && \
 
+  # SSH
+  ssh-keygen -t rsa -C "diazruy@gmail.com" && \
+  cat ~/.ssh/id_rsa.pub && echo "Intall SSH Key in github" && \
+ 
   # Run "indicator" from unity
   # Run "tweak tool" from unity and change Caps to Control: Typing / Caps Lock Behaviour / Make Caps lock extra Ctrl
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &&
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &&
   chsh -s /bin/zsh &&
   
   git clone git@github.com:diazruy/dotfiles.git &&
@@ -75,19 +79,14 @@ sudo apt-get install \
   git submodule update
   
   # RVM
-  curl -sSL https://get.rvm.io | bash -s stable --with-default-gems="rails haml" \
-  rvm install 2.3.0 && \
+  curl -sSL https://get.rvm.io | bash -s stable && 
   # Change Terminal Profile settings under Command and select "Run command as login shell"
 
   sudo -u postgres create user -s rew -P &&
   
-  wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh &&
+  sudo snap install --classic heroku &&
   heroku login && 
     
-  # SSH
-  ssh-keygen -t rsa -C "diazruy@gmail.com" && \
-  cat ~/.ssh/id_rsa.pub && echo "Intall SSH Key in github" && \
-  
-  read -p "Add 'export TERM=xterm-256color' to .bashrc" && \
+  read -p "Add 'export TERM=xterm-256color' to .bashrc" 
   
 

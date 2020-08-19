@@ -82,7 +82,11 @@ sudo apt-get install \
   curl -sSL https://get.rvm.io | bash -s stable && 
   # Change Terminal Profile settings under Command and select "Run command as login shell"
 
-  sudo -u postgres create user -s rew -P &&
+  sudo -u postgres createuser -s ruy -P &&
+  
+  curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add &&
+  sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update' &&
+  sudo apt install pgadmin4
   
   sudo snap install --classic heroku &&
   heroku login && 
